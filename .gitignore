@@ -1,0 +1,15 @@
+node_modules/
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.DS_Store
+*.log
+# Clones de repos destino (cada uno tiene su propio git)
+workspace/*
+!workspace/.gitkeep
+# Respaldo previo al reset
+_legacy/
+# Builds
+lib/
+build/
+dist/
