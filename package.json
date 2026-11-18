@@ -2,19 +2,16 @@
   "name": "aneus",
   "version": "0.1.0",
   "private": true,
-  "description": "Spec-driven (Spec Kit) hub for building features across multiple repositories, plus shared @aneus/* React Native libraries",
+  "description": "Monorepo of shared @aneus/* libraries for React Native",
   "license": "MIT",
+  "type": "module",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "feature:start": "scripts/feature-start.sh",
-    "repo:add": "scripts/repo-add.sh",
-    "repo:list": "scripts/repo-list.sh",
-    "repo:sync": "scripts/repo-sync.sh",
-    "release": "scripts/release.sh"
+    "release": "node scripts/release.mjs"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   }
 }

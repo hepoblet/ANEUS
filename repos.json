@@ -1,4 +1,0 @@
-{
-  "$comment": "Target repository registry. Edit with scripts/repo-add.sh. Each repo is cloned into workspace/<name>.",
-  "repos": []
-}
