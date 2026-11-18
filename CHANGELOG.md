@@ -1,10 +1,21 @@
 # Changelog
 
-All notable changes to the ANEUS hub are documented in this file.
+All notable changes to the ANEUS repository are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project adheres to [Semantic Versioning](https://semver.org/).
 Packages under `packages/` keep their own `CHANGELOG.md`.
 
 ## [Unreleased]
+
+### Changed
+- ANEUS is now only a monorepo of shared `@aneus/*` libraries. Specs and agent workflow move to Requiem, to be installed later.
+- Branching: one work branch per change (`feat/`, `fix/`, `docs/`, `chore/`) into `development`, then promotion by pull request `development` → `stage` → `production`. Replaces the three branches per feature with cherry-picks.
+- `release` script rewritten in Node (`scripts/release.mjs`) so it runs on Windows, macOS and Linux.
+- Requires Node.js 22+.
+- Principles moved from the Spec Kit constitution to `AGENTS.md`; `CLAUDE.md` imports it.
+
+### Removed
+- Spec Kit: `.specify/`, the `speckit-*` skills and the constitution.
+- Multi-repository hub: `repos.json`, `workspace/`, `targets/`, `specs/` and the `repo-add`, `repo-list`, `repo-sync` and `feature-start` scripts.
 
 ## [0.1.0] - 2026-10-14
 
